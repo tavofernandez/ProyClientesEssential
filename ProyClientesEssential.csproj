@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\conexionmaestra.cs" />
+    <Compile Include="Datos\DClientes.cs" />
     <Compile Include="Logica\Lclientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
