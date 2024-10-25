@@ -29,7 +29,7 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnguardar_Click(object sender, EventArgs e)
         {
 
         }
