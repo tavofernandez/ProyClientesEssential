@@ -33,5 +33,19 @@ namespace ProyClientesEssential.Presentacion.Crud
         {
 
         }
+
+        private void Insertarclientes()
+        {
+            DClientes funcion = new DClientes();
+            Lclientes parametros = new Lclientes();
+
+            parametros.Codigo = Convert.ToInt32(txtcodigo.Text);
+            parametros.Nombre = txtnombre.Text;
+            parametros.Edad = Convert.ToInt32(txtedad.Text);
+
+            funcion.InsertarClientes(parametros);
+        }
+
+
     }
 }
