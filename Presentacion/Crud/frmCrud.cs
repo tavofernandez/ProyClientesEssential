@@ -31,7 +31,7 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-
+            Insertarclientes();
         }
 
         private void Insertarclientes()
