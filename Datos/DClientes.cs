@@ -29,6 +29,9 @@ namespace ProyClientesEssential.Datos
                 //ejecutamos el proceso
                 cmd.ExecuteNonQuery();
 
+                //mensaje que el cliente registrado ha sido correcto
+                MessageBox.Show("Cliente Registrado");
+
             }
             catch (Exception ex)
             {
