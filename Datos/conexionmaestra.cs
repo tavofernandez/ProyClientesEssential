@@ -11,7 +11,7 @@ namespace ProyClientesEssential.Datos
     public class conexionmaestra
     {
         //autentificacion de windows
-        public static string conexion = @"Data source=DESKTOP-4N38VGD\SQLEXPRESS; Inital Catalog=ClientesEssentialDB; Integrated Security=true";
+        public static string conexion = @"Data source=DESKTOP-4N38VGD\SQLEXPRESS; Initial Catalog=ClientesEssentialDB; Integrated Security=true";
         
         public static SqlConnection conectar = new SqlConnection(conexion);
 
