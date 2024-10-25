@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+using ProyClientesEssential.Datos;
+using ProyClientesEssential.Logica;
+
 namespace ProyClientesEssential.Presentacion.Crud
 {
     public partial class frmCrud : Form
