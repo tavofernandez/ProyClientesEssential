@@ -1,0 +1,9 @@
+C:\Users\TAVO\source\repos\ProyClientesEssential\bin\Debug\ProyClientesEssential.exe
+C:\Users\TAVO\source\repos\ProyClientesEssential\bin\Debug\ProyClientesEssential.pdb
+C:\Users\TAVO\source\repos\ProyClientesEssential\obj\Debug\ProyClientesEssential.csproj.AssemblyReference.cache
+C:\Users\TAVO\source\repos\ProyClientesEssential\obj\Debug\ProyClientesEssential.Presentacion.Crud.frmCrud.resources
+C:\Users\TAVO\source\repos\ProyClientesEssential\obj\Debug\ProyClientesEssential.Properties.Resources.resources
+C:\Users\TAVO\source\repos\ProyClientesEssential\obj\Debug\ProyClientesEssential.csproj.GenerateResource.cache
+C:\Users\TAVO\source\repos\ProyClientesEssential\obj\Debug\ProyClientesEssential.csproj.CoreCompileInputs.cache
+C:\Users\TAVO\source\repos\ProyClientesEssential\obj\Debug\ProyClientesEssential.exe
+C:\Users\TAVO\source\repos\ProyClientesEssential\obj\Debug\ProyClientesEssential.pdb
