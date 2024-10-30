@@ -38,8 +38,8 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtedad = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.datalistado = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,20 +128,22 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.txtedad.Size = new System.Drawing.Size(267, 30);
             this.txtedad.TabIndex = 8;
             // 
-            // dataGridView1
+            // datalistado
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(118, 260);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(617, 254);
-            this.dataGridView1.TabIndex = 9;
+            this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistado.Location = new System.Drawing.Point(118, 260);
+            this.datalistado.Name = "datalistado";
+            this.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.datalistado.Size = new System.Drawing.Size(617, 254);
+            this.datalistado.TabIndex = 9;
+            this.datalistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellContentClick);
             // 
             // frmCrud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 544);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datalistado);
             this.Controls.Add(this.txtedad);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtcodigo);
@@ -154,7 +156,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.Name = "frmCrud";
             this.Text = "frmCrud";
             this.Load += new System.EventHandler(this.frmCrud_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,6 +173,6 @@ namespace ProyClientesEssential.Presentacion.Crud
         private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtedad;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datalistado;
     }
 }

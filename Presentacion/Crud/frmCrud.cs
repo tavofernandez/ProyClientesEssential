@@ -55,5 +55,10 @@ namespace ProyClientesEssential.Presentacion.Crud
         {
 
         }
+
+        private void datalistado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
