@@ -46,6 +46,14 @@ namespace ProyClientesEssential.Presentacion.Crud
             funcion.InsertarClientes(parametros);
         }
 
+        private void txtcodigo_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void txtnombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

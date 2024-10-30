@@ -38,6 +38,8 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtedad = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +54,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(214, 33);
+            this.label2.Location = new System.Drawing.Point(335, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 37);
             this.label2.TabIndex = 1;
@@ -92,7 +94,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             // btnguardar
             // 
             this.btnguardar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnguardar.Location = new System.Drawing.Point(424, 134);
+            this.btnguardar.Location = new System.Drawing.Point(528, 134);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(100, 39);
             this.btnguardar.TabIndex = 5;
@@ -105,30 +107,41 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.txtcodigo.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcodigo.Location = new System.Drawing.Point(221, 100);
             this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(178, 30);
+            this.txtcodigo.Size = new System.Drawing.Size(267, 30);
             this.txtcodigo.TabIndex = 6;
+            this.txtcodigo.TextChanged += new System.EventHandler(this.txtcodigo_TextChanged);
             // 
             // txtnombre
             // 
             this.txtnombre.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(221, 143);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(178, 30);
+            this.txtnombre.Size = new System.Drawing.Size(267, 30);
             this.txtnombre.TabIndex = 7;
+            this.txtnombre.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
             // 
             // txtedad
             // 
             this.txtedad.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtedad.Location = new System.Drawing.Point(221, 192);
             this.txtedad.Name = "txtedad";
-            this.txtedad.Size = new System.Drawing.Size(178, 30);
+            this.txtedad.Size = new System.Drawing.Size(267, 30);
             this.txtedad.TabIndex = 8;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(118, 260);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(617, 254);
+            this.dataGridView1.TabIndex = 9;
             // 
             // frmCrud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(918, 544);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtedad);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtcodigo);
@@ -141,6 +154,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.Name = "frmCrud";
             this.Text = "frmCrud";
             this.Load += new System.EventHandler(this.frmCrud_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +171,6 @@ namespace ProyClientesEssential.Presentacion.Crud
         private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtedad;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
