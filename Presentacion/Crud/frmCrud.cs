@@ -53,6 +53,8 @@ namespace ProyClientesEssential.Presentacion.Crud
             parametros.Edad = Convert.ToInt32(txtedad.Text);
 
             funcion.InsertarClientes(parametros);
+
+            MostrarClientes();
         }
 
         private void txtcodigo_TextChanged(object sender, EventArgs e)
