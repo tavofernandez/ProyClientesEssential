@@ -29,6 +29,15 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         }
 
+        private void MostrarClientes()
+        {
+            DClientes funcion = new DClientes();
+            DataTable dt = new DataTable();
+            funcion.MostrarClientes(ref dt);
+
+            datalistado.DataSource = dt;
+        }
+
         private void btnguardar_Click(object sender, EventArgs e)
         {
             Insertarclientes();
