@@ -46,5 +46,26 @@ namespace ProyClientesEssential.Datos
                 conexionmaestra.cerrar();
             }
         }
+
+        public void MostrarClientes(ref DataTable dt)
+        {
+            try
+            {
+                conexionmaestra.abrir();
+                SqlDataAdapter da = new SqlDataAdapter("MostrarClientes", conexionmaestra.conectar);
+
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                
+            }
+            finally
+            {
+                conexionmaestra.cerrar();
+            }
+
+        }
     }
 }
