@@ -26,7 +26,7 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         private void frmCrud_Load(object sender, EventArgs e)
         {
-
+            MostrarClientes();
         }
 
         private void MostrarClientes()
