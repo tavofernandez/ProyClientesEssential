@@ -130,6 +130,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             // 
             // datalistado
             // 
+            this.datalistado.AllowUserToAddRows = false;
             this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datalistado.Location = new System.Drawing.Point(118, 260);
             this.datalistado.Name = "datalistado";
