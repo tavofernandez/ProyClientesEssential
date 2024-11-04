@@ -88,6 +88,22 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         }
 
+        private void ActualizarDatos()
+        {
+
+            DClientes funcion = new DClientes();
+            Lclientes parametros = new Lclientes();
+
+            parametros.Idclientes = idclientes;
+            parametros.Nombre = txtnombre.Text;
+            parametros.Edad = Convert.ToInt32(txtedad.Text);
+
+            funcion.EditarClientes(parametros);
+
+            MostrarClientes();
+
+        }
+
 
     }
 }
