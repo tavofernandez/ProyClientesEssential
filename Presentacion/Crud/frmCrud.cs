@@ -19,6 +19,8 @@ namespace ProyClientesEssential.Presentacion.Crud
             InitializeComponent();
         }
 
+        int idclientes;
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -78,5 +80,12 @@ namespace ProyClientesEssential.Presentacion.Crud
             txtnombre.Text = datalistado.SelectedCells[2].Value.ToString();
             txtedad.Text = datalistado.SelectedCells[3].Value.ToString();
         }
+
+        private void btnactualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

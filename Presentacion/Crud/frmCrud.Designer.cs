@@ -150,7 +150,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.btnactualizar.TabIndex = 5;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
-            this.btnactualizar.Click += new System.EventHandler(this.btnguardar_Click);
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // frmCrud
             // 
