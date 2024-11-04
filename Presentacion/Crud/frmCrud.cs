@@ -85,7 +85,7 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         private void btnactualizar_Click(object sender, EventArgs e)
         {
-
+            ActualizarDatos();
         }
 
         private void ActualizarDatos()
