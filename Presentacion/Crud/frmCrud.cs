@@ -71,5 +71,12 @@ namespace ProyClientesEssential.Presentacion.Crud
         {
 
         }
+
+        private void datalistado_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigo.Text = datalistado.SelectedCells[1].Value.ToString();
+            txtnombre.Text = datalistado.SelectedCells[2].Value.ToString();
+            txtedad.Text = datalistado.SelectedCells[3].Value.ToString();
+        }
     }
 }
