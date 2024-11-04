@@ -7,7 +7,7 @@ namespace ProyClientesEssential.Logica
 {
     public class Lclientes
     {
-        public int Idcliente { get; set; }
+        public int Idclientes { get; set; }
 
         public int Codigo { get; set; }
 

@@ -55,6 +55,7 @@ namespace ProyClientesEssential.Datos
                 SqlCommand cmd = new SqlCommand("EditarClientes", conexionmaestra.conectar);
 
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Idclientes", parametros.Idclientes);
                 cmd.Parameters.AddWithValue("@Nombre", parametros.Nombre);
                 cmd.Parameters.AddWithValue("@Edad", parametros.Edad);
 
