@@ -39,6 +39,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtedad = new System.Windows.Forms.TextBox();
             this.datalistado = new System.Windows.Forms.DataGridView();
+            this.btnactualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,9 +95,9 @@ namespace ProyClientesEssential.Presentacion.Crud
             // btnguardar
             // 
             this.btnguardar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnguardar.Location = new System.Drawing.Point(528, 134);
+            this.btnguardar.Location = new System.Drawing.Point(527, 107);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(100, 39);
+            this.btnguardar.Size = new System.Drawing.Size(134, 42);
             this.btnguardar.TabIndex = 5;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = true;
@@ -139,6 +140,17 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.datalistado.TabIndex = 9;
             this.datalistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellContentClick);
             // 
+            // btnactualizar
+            // 
+            this.btnactualizar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactualizar.Location = new System.Drawing.Point(527, 163);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(134, 42);
+            this.btnactualizar.TabIndex = 5;
+            this.btnactualizar.Text = "Actualizar";
+            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnguardar_Click);
+            // 
             // frmCrud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +160,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.Controls.Add(this.txtedad);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtcodigo);
+            this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -175,5 +188,6 @@ namespace ProyClientesEssential.Presentacion.Crud
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtedad;
         private System.Windows.Forms.DataGridView datalistado;
+        private System.Windows.Forms.Button btnactualizar;
     }
 }
