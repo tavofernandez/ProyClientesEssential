@@ -47,6 +47,32 @@ namespace ProyClientesEssential.Datos
             }
         }
 
+        public void EditarClientes(Lclientes parametros)
+        {
+            try
+            {
+                conexionmaestra.abrir();
+                SqlCommand cmd = new SqlCommand("EditarClientes", conexionmaestra.conectar);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", parametros.Nombre);
+                cmd.Parameters.AddWithValue("@Edad", parametros.Edad);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Registro Actualizado");
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                
+            }
+
+        }
+
+
         public void MostrarClientes(ref DataTable dt)
         {
             try
