@@ -76,11 +76,15 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         private void datalistado_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            idclientes = Convert.ToInt32(datalistado.SelectedCells[0].Value);
+            if (datalistado.Rows.Count > 0)
+            {
+                idclientes = Convert.ToInt32(datalistado.SelectedCells[0].Value);
 
-            txtcodigo.Text = datalistado.SelectedCells[1].Value.ToString();
-            txtnombre.Text = datalistado.SelectedCells[2].Value.ToString();
-            txtedad.Text = datalistado.SelectedCells[3].Value.ToString();
+                txtcodigo.Text = datalistado.SelectedCells[1].Value.ToString();
+                txtnombre.Text = datalistado.SelectedCells[2].Value.ToString();
+                txtedad.Text = datalistado.SelectedCells[3].Value.ToString();
+            }
+
         }
 
         private void btnactualizar_Click(object sender, EventArgs e)
@@ -108,7 +112,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             EliminarDatos();
         }
 
-        
+
         private void EliminarDatos()
         {
             DClientes funcion = new DClientes();
@@ -121,7 +125,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             MostrarClientes();
 
         }
-        
+
 
     }
 }
