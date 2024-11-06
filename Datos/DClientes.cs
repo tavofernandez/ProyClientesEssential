@@ -47,6 +47,35 @@ namespace ProyClientesEssential.Datos
             }
         }
 
+
+        public void EliminarClientes(Lclientes parametros)
+        {
+            try
+            {
+                conexionmaestra.abrir();
+                SqlCommand cmd = new SqlCommand("EliminarClientes", conexionmaestra.conectar);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Idclientes", parametros.Idclientes);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Cliente Eliminado");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                
+            }
+            finally
+            {
+                conexionmaestra.cerrar();
+            }
+
+        }
+
+
         public void EditarClientes(Lclientes parametros)
         {
             try
