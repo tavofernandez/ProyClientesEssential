@@ -105,7 +105,7 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-
+            EliminarDatos();
         }
 
         
