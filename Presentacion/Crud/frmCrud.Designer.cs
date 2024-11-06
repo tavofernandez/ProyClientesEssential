@@ -40,6 +40,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.txtedad = new System.Windows.Forms.TextBox();
             this.datalistado = new System.Windows.Forms.DataGridView();
             this.btnactualizar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,6 +153,17 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.btnactualizar.UseVisualStyleBackColor = true;
             this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
+            // btneliminar
+            // 
+            this.btneliminar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btneliminar.Location = new System.Drawing.Point(681, 131);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(134, 42);
+            this.btneliminar.TabIndex = 5;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
             // frmCrud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,6 +174,7 @@ namespace ProyClientesEssential.Presentacion.Crud
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.btnactualizar);
+            this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -190,5 +203,6 @@ namespace ProyClientesEssential.Presentacion.Crud
         private System.Windows.Forms.TextBox txtedad;
         private System.Windows.Forms.DataGridView datalistado;
         private System.Windows.Forms.Button btnactualizar;
+        private System.Windows.Forms.Button btneliminar;
     }
 }

@@ -90,7 +90,6 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         private void ActualizarDatos()
         {
-
             DClientes funcion = new DClientes();
             Lclientes parametros = new Lclientes();
 
@@ -104,6 +103,25 @@ namespace ProyClientesEssential.Presentacion.Crud
 
         }
 
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void EliminarDatos()
+        {
+            DClientes funcion = new DClientes();
+            Lclientes parametros = new Lclientes();
+
+            parametros.Idclientes = idclientes;
+
+            funcion.EliminarClientes(parametros);
+
+            MostrarClientes();
+
+        }
+        
 
     }
 }
